@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { Box, Container, Typography } from '@mui/material'
+import { handlee, cormorant } from './../utils'
 
 export default function Home() {
   return (
@@ -10,12 +11,26 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Box component='header' p={2}>
-        <Typography variant='h3' component='h1' align='center'>
+        <Typography
+          variant='h3'
+          component='h1'
+          align='center'
+          sx={{
+            fontFamily: handlee.style.fontFamily,
+          }}
+        >
           What a nice day!
         </Typography>
       </Box>
       <Box component='main' p={2}>
-        <Typography variant='body1' component='p' align='center'>
+        <Typography
+          variant='body1'
+          component='p'
+          align='center'
+          sx={{
+            fontFamily: cormorant.style.fontFamily,
+          }}
+        >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eos
           reiciendis molestiae deleniti sapiente, ratione dolorum sint
           aspernatur numquam corporis perferendis voluptates magnam laudantium
